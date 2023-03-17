@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.js" method="get">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Região Nordeste">
+                    <option value="rn">Rio Grande do Norte</option>
+                    <option value="ce" selected>Ceará</option>
+                    <option value="pe">Pernambuco</option>
+                </optgroup>
+
+                <optgroup label="Região Sudeste">
+                    <option value="mg">Minas Gerais</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rio">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+
+                <p>
+                    <label for="iprof">Profissões</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    
+                    <datalist id="lstprof">
+                        <option value="ADM">Administrador</option>
+
+                        <option value="CONT">Contabilista</option>
+
+                        <option value="DEV">Desenvolvedor</option>
+
+
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="imsg">Mensagem</label> <br>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+                </p>
+
+
+
+            
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+
+
+    </form>
+</body>
+</html>
